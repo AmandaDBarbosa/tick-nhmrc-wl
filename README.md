@@ -229,6 +229,13 @@ qiime diversity alpha-rarefaction \
 --p-max-depth 40000 \
 --o-visualization alpha-rarefaction-plot.qzv
 
+#Generate fasta file with representative sequences (to inspect):
+
+qiime tools export \
+--input-path 16S_denoise_rep-seqs.qza\
+--output-path exported-file
+
+
 #----------------------------------------------------------------------------
 
 ###See if I have all outputs as in this template, including alpha rarefaction plot (https://view.qiime2.org/)
